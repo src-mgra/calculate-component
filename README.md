@@ -1,9 +1,11 @@
 # Calc-Component
 
-use of calc-component:
+##use of calc-component:
 npm install git+https://github.com/src-mgra/calc-component --save
 
+
 import { CalcComponent } from '../calc-component';
+
 
 ## bind component
 <app-calc-component value=5 selCalc='circulararea'></app-calc-component>
