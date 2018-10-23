@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "moduleResolution": "node"
+    },
+    "files": [
+        "clac-component.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
