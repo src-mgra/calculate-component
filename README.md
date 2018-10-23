@@ -1,7 +1,7 @@
 # Ng2CalcTool
 
 use of calc-component:
-npm install git+https://github.com/src-mgra/src/app/calc-component --save
+npm install git+https://github.com/src-mgra/calc-component --save
 
 import { CalcComponent } from '../calc-component';
 
