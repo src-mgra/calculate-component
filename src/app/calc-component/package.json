@@ -1,6 +1,13 @@
 {
     "name": "clac-component",
     "version": "1.0.0",
+   "description":"calculates cirular area",
+    "keywords": [
+        "npm",
+        "circle",
+        "calculation"
+    ],
+    "author":"m.grassmann",
     "scripts": {
         "build": "tsc"
     },
