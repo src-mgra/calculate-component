@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CircularAreaComponent } from './circular-area/circular-area.component';
+import { CalcComponentModule } from 'src/app/calc-component';
+import { CircumferenceComponent } from './circumference/circumference.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CircularAreaComponent,
+    CircumferenceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CalcComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
