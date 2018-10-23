@@ -17,3 +17,6 @@ refer to: " < app-calc-component value=5 selCalc='circulararea'></app-calc-compo
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
+https://stackblitz.com/github/src-mgra/calc-component
+
+
