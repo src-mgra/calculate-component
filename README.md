@@ -8,7 +8,7 @@ import { CalcComponent } from '../calc-component';
 
 
 ## bind component
-refer to: <app-calc-component value=5 selCalc='circulararea'></app-calc-component>
+refer to: " <app-calc-component value=5 selCalc='circulararea'></app-calc-component> "
 
 
 
