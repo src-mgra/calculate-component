@@ -1,6 +1,6 @@
 # Calc-Component
 
-##use of calc-component:
+## use of calc-component
 npm install git+https://github.com/src-mgra/calc-component --save
 
 
