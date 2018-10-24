@@ -4,7 +4,7 @@
 npm install git+https://github.com/src-mgra/calc-component --save
 
 
-import { CalcComponent } from '../calc-component';
+import { CalcComponent } from 'clac-component';
 
 
 ## bind component
