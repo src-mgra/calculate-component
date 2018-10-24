@@ -3,17 +3,24 @@
 ## use of calc-component
 npm install git+https://github.com/src-mgra/calc-component --save
 
+or
+
+npm install clac-component --save
+
+in project:
 
 import { CalcComponent } from 'clac-component';
 
 
 ## bind component
-refer to:  < app-calc-component value=5 selCalc='circulararea'></app-calc-component > 
+refer to:  < app-calc-component value=5 selCalc='circulararea'></app-calc-component >  or
+
             < app-calc-component value=5 selCalc='circumference'></app-calc-component >
 
-in directory clac-component you can build the component with
 
 ## build component
+
+in directory clac-component you can build the component with
 
 npm run build
 
