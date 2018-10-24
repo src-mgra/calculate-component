@@ -13,7 +13,12 @@ import { CalcComponent } from 'clac-component';
 
 
 ## bind component
-refer to:  < app-calc-component value=5 selCalc='circulararea'></app-calc-component >  or
+refer to component by insert:  
+            
+            < app-calc-component value=5 selCalc='circulararea'></app-calc-component >
+            
+
+            or
 
             < app-calc-component value=5 selCalc='circumference'></app-calc-component >
 
