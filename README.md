@@ -12,11 +12,16 @@ refer to:  < app-calc-component value=5 selCalc='circulararea'></app-calc-compon
             < app-calc-component value=5 selCalc='circumference'></app-calc-component >
 
 in directory clac-component you can build the component with
+
+## build component
+
 npm run build
 
-and publish it later with
+and publish it later as a npm-package with
 
-npm publish
+npm publish --access=public
+
+(set keys and license before)
 
 
 ## Development server
