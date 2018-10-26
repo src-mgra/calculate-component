@@ -7,10 +7,19 @@ import { CalcComponent } from 'clac-component';
   styleUrls: ['./circumference.component.scss']
 })
 export class CircumferenceComponent implements OnInit {
+  public render: Boolean;
+  public radius: number;
+  public r: number;
+  constructor() { this.radius = 5;  }
 
-  constructor() { }
+  onChange(event: any, r: number) {
+    console.log(r);
+    this.r = Number(r);
+    this.render = !this.render;
+  }
 
   ngOnInit() {
+    this.render = false;
   }
 
 }

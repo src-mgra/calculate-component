@@ -7,10 +7,18 @@ import { CalcComponent } from 'clac-component';
   styleUrls: ['./circular-area.component.scss']
 })
 export class CircularAreaComponent implements OnInit {
-
+  public render: Boolean;
+  public radius: number;
+  public r: number;
   constructor() { }
 
-  ngOnInit() {
+  onChange(event: any, r: number) {
+    console.log(r);
+    this.r = Number(r);
+    this.render = !this.render;
   }
 
+  ngOnInit() {
+    this.render = false;
+  }
 }

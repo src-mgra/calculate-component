@@ -1,5 +1,13 @@
-<h2 class="mat-elevation-z8">
-    circumference:
-    <app-calc-component value=5 selCalc='circumference'></app-calc-component>
-</h2>
+<div class="mat-elevation-z8">
+        <form  (change)="onChange($event,r.value)">  
+                <fieldset class="material">
+                  <label>Radius</label>
+                  <hr>
+                  <input #r type="number" placeholder={{radius}} autocomplete="on" value = 5 required> 
+                </fieldset>
+                <ng-container *ngIf="!render">
+                  <app-calc-component value={{r.value}} selCalc='circumference'></app-calc-component>
+                </ng-container>  
+        </form>
+</div>
   
