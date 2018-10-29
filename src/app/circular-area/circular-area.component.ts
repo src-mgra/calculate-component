@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CalcComponent } from 'clac-component';
 
 @Component({
@@ -10,12 +10,14 @@ export class CircularAreaComponent implements OnInit {
   public render: Boolean;
   public radius: number;
   public r: number;
-  constructor() { }
+  constructor(private cdRef: ChangeDetectorRef) { }
 
   onChange(event: any, r: number) {
     console.log(r);
     this.r = Number(r);
-    this.render = !this.render;
+    this.render = true;
+    this.cdRef.detectChanges();
+    this.render = false;
   }
 
   ngOnInit() {
