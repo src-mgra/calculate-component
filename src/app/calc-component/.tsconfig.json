@@ -11,7 +11,7 @@
         "moduleResolution": "node"
     },
     "files": [
-        "clac-component.ts"
+        "calc-component.ts"
     ],
     "exclude": [
         "node_modules"
