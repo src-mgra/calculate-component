@@ -5,7 +5,7 @@ npm install git+https://github.com/src-mgra/calc-component --save
 
 or
 
-npm install clac-component --save
+npm install calc-component --save
 
 in project:
 
