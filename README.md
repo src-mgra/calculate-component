@@ -9,7 +9,7 @@ npm install calc-component --save
 
 in project:
 
-import { CalcComponent } from 'clac-component';
+import { CalcComponent } from 'calc-component';
 
 
 ## bind component
