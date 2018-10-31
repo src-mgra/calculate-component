@@ -14,11 +14,24 @@ import { CalcComponent } from 'clac-component';
 
 ## bind component
 refer to component by insert:  
+
+            calculate linear equation system:
             
+             1x+1y+1z=3
+             2x-3y-1z=2
+             4x-5y-1z=1
+
+            < app-calc-component value='{"size":3,"matrix":[[1,1,1,3],[2,-3,-1,2],[4,-5,-1,1]]}' selCalc='eq-solver'></app-calc-component >
+
+
+            or
+            calculate circular area:
+
             < app-calc-component value=5 selCalc='circulararea'></app-calc-component >
             
 
             or
+            calculate cirumference:
 
             < app-calc-component value=5 selCalc='circumference'></app-calc-component >
 

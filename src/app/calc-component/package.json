@@ -1,13 +1,19 @@
 {
     "name": "clac-component",
-    "version": "1.0.0",
-   "description":"calculates cirular area",
+    "version": "1.0.1",
+   "description":"calculates linear equation systems",
     "keywords": [
         "npm",
-        "circle",
-        "calculation"
+        "angular",
+        "calculation",
+        "equation",
+        "solver",
+        "json",
+        "routing"
     ],
     "author":"m.grassmann",
+    "license" : "(MIT OR Apache-2.0)",
+    "homepage": "https://github.com/src-mgra/calculate-component#readme",
     "scripts": {
         "build": "tsc"
     },

@@ -1,0 +1,13 @@
+<div class="mat-elevation-z8">
+    <form  (change)="onChange($event,mat.value)">  
+        <fieldset class="material">
+          <label>matrix</label>
+          <hr>
+          <input #mat type="text" value = '{"size":3,"matrix":[[1,1,1,3],[2,-3,-1,2],[4,-5,-1,1]]}' required> 
+        </fieldset>
+        <ng-container *ngIf="!render">
+           <app-calc-component value={{mat.value}} selCalc='eq-solver'></app-calc-component>
+      </ng-container>
+      </form>
+ </div>
+ 

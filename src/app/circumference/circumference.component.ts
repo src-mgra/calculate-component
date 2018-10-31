@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { CalcComponent } from 'clac-component';
+import { CalcComponent } from '../calc-component';
 
 @Component({
   selector: 'app-circumference',

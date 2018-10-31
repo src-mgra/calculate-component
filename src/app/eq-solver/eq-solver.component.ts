@@ -2,19 +2,19 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CalcComponent } from '../calc-component';
 
 @Component({
-  selector: 'app-circular-area',
-  templateUrl: './circular-area.component.html',
-  styleUrls: ['./circular-area.component.scss']
+  selector: 'app-eq-solver',
+  templateUrl: './eq-solver.component.html',
+  styleUrls: ['./eq-solver.component.scss']
 })
-export class CircularAreaComponent implements OnInit {
+export class EqSolverComponent implements OnInit {
   public render: Boolean;
-  public radius: number;
-  public r: number;
+  public matrix: String;
+  public m: String;
   constructor(private cdRef: ChangeDetectorRef) { }
 
-  onChange(event: any, r: number) {
-    console.log(r);
-    this.r = Number(r);
+  onChange(event: any, m: String) {
+    console.log(m);
+    this.m = m;
     this.render = true;
     this.cdRef.detectChanges();
     this.render = false;
