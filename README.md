@@ -28,23 +28,23 @@ refer to component by insert:
     [4,-5,-1,1]
   ]}
 
-put the equations in the json format in the parameters, the last value of a line corresponds to the constant!
+put the equations in json format in the parameters, the last value of each line corresponds to the constant!
 
 
 
-            < app-calc-component value='{"size":3,"matrix":[[1,1,1,3],[2,-3,-1,2],[4,-5,-1,1]]}' selCalc='eq-solver'></app-calc-component >
+            <app-calc-component value='{"size":3,"matrix":[[1,1,1,3],[2,-3,-1,2],[4,-5,-1,1]]}' selCalc='eq-solver'></app-calc-component>
 
 
             or
             calculate circular area:
 
-            < app-calc-component value=5 selCalc='circulararea'></app-calc-component >
+            <app-calc-component value=5 selCalc='circulararea'></app-calc-component>
             
 
             or
             calculate cirumference:
 
-            < app-calc-component value=5 selCalc='circumference'></app-calc-component >
+            <app-calc-component value=5 selCalc='circumference'></app-calc-component>
 
 
 ## build component
