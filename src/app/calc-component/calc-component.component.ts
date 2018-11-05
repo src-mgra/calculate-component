@@ -86,20 +86,19 @@ export class CalcComponent implements OnInit {
             let z: number;
             let id: number;
             let sum: number;
-            let result = [];
             for (z = this.j; z >= 0; z--) {
                 sum = 0;
                 for (id = 0; id < this.k2 + 1; id++) {
                     sum = sum + (this.erg[id] * this.fkt[z][id]);
                 }
                 this.erg[z] = (this.knt[z] + sum * -1) / this.fkt[z][z];
-                erg[z] = Math.round(erg[z] * 1000) / 1000;
-                result.push(' res(' + z + ') => ' + erg[z]);
+                this.erg[z] = Math.round(this.erg[z] * 1000) / 1000;
+                this.result.push(' res(' + z + ') => ' + this.erg[z]);
             }
         }
 
         CalcGls() {
-            this.result = '';
+            this.result = [];
             let i: number;
 
             for (i = 0; i < this.k2 + 1; i++) {
