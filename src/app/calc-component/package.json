@@ -1,6 +1,6 @@
 {
     "name": "calc-component",
-    "version": "1.0.2",
+    "version": "1.0.3",
    "description":"calculates linear equation systems",
     "keywords": [
         "npm",
