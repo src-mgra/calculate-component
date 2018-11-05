@@ -28,7 +28,7 @@ export class CalcComponent implements OnInit {
     ];
     public knt: number[] = [0, 0, 0, 0, 0, 0];
     public erg: number[] = [0, 0, 0, 0, 0, 0];
-    public result;
+  
     public qMax = 2;
     public k2 = 2;
     public j = 2;
@@ -86,6 +86,7 @@ export class CalcComponent implements OnInit {
             let z: number;
             let id: number;
             let sum: number;
+            let result = [];
             for (z = this.j; z >= 0; z--) {
                 sum = 0;
                 for (id = 0; id < this.k2 + 1; id++) {
@@ -93,40 +94,34 @@ export class CalcComponent implements OnInit {
                 }
                 this.erg[z] = (this.knt[z] + sum * -1) / this.fkt[z][z];
                 this.erg[z] = Math.round(this.erg[z] * 1000) / 1000;
-                this.result.push(' res(' + z + ') => ' + this.erg[z]);
+                result.push(' res(' + z + ') => ' + this.erg[z]);
             }
+          return result;
         }
 
         CalcGls() {
-            this.result = [];
             let i: number;
 
             for (i = 0; i < this.k2 + 1; i++) {
                 this.CGls(i);
             }
-            this.CFkt();
+            let res = this.CFkt();
+            return res;
         }
 
         doSetMatrix(matrix: any, size: number) {
            let i = 0;
            let k = 0;
            for (i = 0; i < size; i++) {
-            // let _fakts = '';
             for (k = 0; k < size; k++) {
               this.fkt[i][k] = matrix[i][k];
-              // _fakts = _fakts + '/' + this.fkt[i][k];
             }
-            // console.log('fkt:' + _fakts);
            this.knt[i] = matrix[i][size];
-           // console.log('knt:' + this.knt[i]);
           }
         }
 
     solveEquation(equation: any) {
         const json = JSON.parse(equation);
-        // console.log(json.size);
-        // console.log(json.matrix);
-        // load matrix from json-value
         if (!json.size) {
             this.setDemo();
         } else {
@@ -135,9 +130,9 @@ export class CalcComponent implements OnInit {
             this.doSetMatrix(json.matrix, json.size);
         }
         // clac eq by gauss agorithmus
-        this.CalcGls();
-        // return result
-       return (this.result);
+        let res = this.CalcGls();
+       
+       return res;
     }
   //*** solve eq
     ngOnInit() {
